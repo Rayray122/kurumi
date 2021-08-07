@@ -52,11 +52,11 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am an Anime themed group management bot. I will use my angel Zafkiel and protect your group. You can find my list of available commands with /help.
+I am an Anime themed group management bot. I will use my angel Ruxy and protect your group. You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
-KURUMI is here! 
+Ivana is here! 
 I Use My Powers To Help Admins To Manage Their Groups! 
 *Main* commands available :
  • /help: PM's you this message.
@@ -73,7 +73,7 @@ TOKISAKI_IMG = "https://telegra.ph/file/99bbcc3b8564804dc2ab0.jpg"
 KURUMI_IMG = "https://telegra.ph/file/e1d87ec2bdac4e3cfe0a4.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-Click here to donate in [Paypal](https://www.paypal.me/zameeljaz)"""
+Click here to donate in [Paypal](https://www.paypal.me/suicide_supremacy)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -191,7 +191,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Kurumi Chan to your group",
+                            text="☑️ Add Ivana to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
@@ -200,18 +200,18 @@ def start(update: Update, context: CallbackContext):
                              text="🚨 Support 🚨",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                          InlineKeyboardButton(
-                             text="My luv ❤",
-                             url="https://t.me/A_lonelyPerson")
+                             text="logs",
+                             url="https://t.me/ivanalogs")
                     ], 
                      [
                          InlineKeyboardButton(
-                             text="🔔 Updates of KURUMI 🔔",
-                             url="https://t.me/hiroiscool")
+                             text="🔔 Updates of Ivana 🔔",
+                             url="https://t.me/ivanaupdates")
                     ], 
                      [
                          InlineKeyboardButton(
-                             text="📳 Anime Chat Group 📳",
-                             url="https://t.me/WeebXWorld")
+                             text="📳 Anime Hub 📳",
+                             url="https://t.me/anime_hubon")
                     ]]))
                      
                     
@@ -219,7 +219,7 @@ def start(update: Update, context: CallbackContext):
                     
     else:
         update.effective_message.reply_video(
-                KURUMI_IMG, caption=f"Zaphkiel!!!!\nI'm here with my Zaphkiel")
+                KURUMI_IMG, caption=f"Ruxy!!!!\nI'm here Ruxy")
 
 # for test purposes
 def error_callback(update: Update, context: CallbackContext):
